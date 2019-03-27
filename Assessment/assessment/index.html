@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Noticias</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+        <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-resource.js"></script>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-touch.min.js"></script>      
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>      
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style type="text/css">
+            html {
+            font-size: 0.9rem;
+            }
+            body {
+            background-color: #fefbd8;
+            }   
+        </style>
+       
+        <script src="app/app.js"></script>
+        <script src="app/commun/noticiaEdit.js"></script>
+        <script src="app/components/login/loginService.js"></script>
+        <script src="app/components/login/loginController.js"></script>
+        <script src="app/components/noticias/noticiasService.js"></script>
+        <script src="app/components/noticias/noticiasController.js"></script>
+        <script src="app/components/noticias/noticiaseditController.js"></script>
+    </head>
+    <div class="container">
+        <body bg-primary >
+            <div class="container" ng-app="myApp">
+                <uib-tabset active="active">
+                    <uib-tab index="0" ui-sref ="home" heading="Notícias">
+                    </uib-tab>
+                    <uib-tab index="1" ui-sref ="login" heading="Login">
+               </uib-tabset>
+                
+               <ui-view></ui-view>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+        </body>
+    </div>
+</html>
+ 
+ 

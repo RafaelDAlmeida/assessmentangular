@@ -1,0 +1,25 @@
+<style type="text/css">
+    .form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    button{
+        margin-top: 10px;
+    }
+</style>
+<form>
+    <div ng-controller="LoginController" class="form-group">
+        <div class="form" ng-show="!estaLogado()">
+
+
+            <div class="inform"><label>Login:</label>
+            <input type="text" class="form-control" ng-model="login"></div>  
+            <div class="inform"><label>Senha:</label>
+            <input type="password" class="form-control" ng-model="senha"></div>
+            <div><button ng-click="logar()" type="submit" class="btn btn-primary">Login</button></div>
+        </div>   
+        <div ng-show = "estaLogado()">
+        	<button ng-click = "logout()" type="submit" class="btn btn-primary">Logout</button>
+        </div>
+    </div>
+</form>
